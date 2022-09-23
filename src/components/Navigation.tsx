@@ -28,6 +28,15 @@ export default function Navigation() {
             </Link>
           </li>
         </ul>
+        <Link href="/privacy">
+              <a
+                className={
+                  router.pathname.startsWith("/privacy") ? "active" : null
+                }
+              >
+                privacy
+              </a>
+            </Link>
         <style jsx>
           {`
             .container {
