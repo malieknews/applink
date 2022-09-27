@@ -2,6 +2,15 @@
     package="com.example.myapp"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+<activity android:name="com.example.ActivityOne"
+    android:windowSoftInputMode="stateUnchanged">
+    <intent-filter>
+        <action android:name="android.intent.action.SEND" />
+        <category android:name="android.intent.category.DEFAULT" />
+    </intent-filter>
+</activity>
+
 <activity android:name="com.example.ActivityOne"
     android:screenOrientation="portrait"
     tools:node="merge">
@@ -17,5 +26,38 @@
     <meta-data  android:name="com.example.ExampleLoggerInitializer"
           android:value="androidx.startup" />
 </provider>
+
+<activity android:name="com.example.ActivityOne"
+    android:windowSoftInputMode="stateUnchanged">
+    <intent-filter>
+        <action android:name="android.intent.action.SEND" />
+        <data android:type="image/*" />
+        <category android:name="android.intent.category.DEFAULT" />
+    </intent-filter>
+</activity>
+
+
+
+<activity-alias android:name="com.example.alias">
+  <meta-data android:name="cow"
+      android:value="@string/moo"/>
+  <meta-data android:name="duck"
+      android:value="@string/quack"/>
+</activity-alias>
+
+
+<activity-alias android:name="com.example.alias">
+  <meta-data android:name="cow"
+      android:value="@string/moo"/>
+  <meta-data android:name="duck"
+      android:value="@string/quack"/>
+</activity-alias>
+
+
+<activity android:name="com.example.ActivityOne"
+    android:theme="@oldtheme"
+    android:exported="false"
+    android:allowTaskReparenting="true"
+    android:windowSoftInputMode="stateUnchanged">
 
 
