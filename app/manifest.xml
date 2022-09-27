@@ -78,3 +78,5 @@
 </intent-filter>
 
 
+  <uses-sdk tools:overrideLibrary="tech.adball.mergmanifest, tech.adball.highmanifest"/>
+
