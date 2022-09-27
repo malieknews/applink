@@ -1,0 +1,7 @@
+tech.adball.myapplication.MainActivity
+androidx.appcompat.R$layout: int abc_action_menu_item_layout
+androidx.appcompat.R$attr: int activityChooserViewStyle
+androidx.appcompat.R$styleable: int MenuItem_android_id
+androidx.appcompat.R$styleable: int[] CoordinatorLayout_Layout
+androidx.lifecycle.FullLifecycleObserverAdapter
+...
