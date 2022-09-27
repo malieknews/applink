@@ -19,7 +19,8 @@
         </activity-alias>
         <action android:name="android.intent.action.SEND" />
         <category android:name="android.intent.category.DEFAULT" />
-
+        <data android:scheme="https" android:host="${hostname}" />
+        <action android:name="tech.adball.myapp.free.TRANSMOGRIFY" />
     </intent-filter>
 </activity>
 
