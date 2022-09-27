@@ -1,31 +1,35 @@
-<activity android:name="com.example.ActivityOne"
-    android:screenOrientation="portrait">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="tech.adball.mergmanifest">
+   <uses-sdk android:minSdkVersion="4" />
 
-<activity android:name="com.example.ActivityOne"
+
+<activity android:name="tech.adball.ActivityOne"
+    android:screenOrientation="portrait"
+    android:windowSoftInputMode="stateUnchanged"
+    android:name="tech.adball.MainActivity"
     android:screenOrientation="portrait"
     android:windowSoftInputMode="stateUnchanged">
+
     <intent-filter>
+        <activity-alias android:name="tech.adball.app">
+        <meta-data android:name="Mobile" android:value="@string/mobile"/>
+        </activity-alias>
+        <activity-alias android:name="tech.adball.web">
+        <meta-data android:name="web" android:value="@string/www"/>
+        </activity-alias>
         <action android:name="android.intent.action.SEND" />
         <category android:name="android.intent.category.DEFAULT" />
+
     </intent-filter>
 </activity>
 
 
 
-<activity android:name="com.example.ActivityOne"
-    android:screenOrientation="portrait"
-    android:windowSoftInputMode="stateUnchanged">
-</activity>
 
-<activity-alias android:name="com.example.alias">
-  <meta-data android:name="duck"
-      android:value="@string/quack"/>
-</activity-alias>
 
-<activity-alias android:name="com.example.alias">
-</activity-alias>
 
-<activity-alias android:name="com.example.alias">
-  <meta-data android:name="fox"
-      android:value="@string/dingeringeding"/>
-</activity-alias>
+
+
+  
+  
+
