@@ -1,0 +1,14 @@
+androidx.drawerlayout.R$attr
+androidx.vectordrawable.R
+androidx.appcompat.app.AppCompatDelegateImpl
+    public void setSupportActionBar(androidx.appcompat.widget.Toolbar)
+    public boolean hasWindowFeature(int)
+    public void setHandleNativeActionModesEnabled(boolean)
+    android.view.ViewGroup getSubDecor()
+    public void setLocalNightMode(int)
+    final androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager getAutoNightModeManager()
+    public final androidx.appcompat.app.ActionBarDrawerToggle$Delegate getDrawerToggleDelegate()
+    private static final boolean DEBUG
+    private static final java.lang.String KEY_LOCAL_NIGHT_MODE
+    static final java.lang.String EXCEPTION_HANDLER_MESSAGE_SUFFIX
+...
