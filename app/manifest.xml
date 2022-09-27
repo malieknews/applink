@@ -9,11 +9,16 @@
         <action android:name="android.intent.action.SEND" />
         <category android:name="android.intent.category.DEFAULT" />
     </intent-filter>
+
 </activity>
 
 <activity android:name="com.example.ActivityOne"
     android:screenOrientation="portrait"
     tools:node="merge">
+<intent-filter ... >
+   <action android:name="tech.adball.myapp.free.TRANSMOGRIFY" />
+    ...
+</intent-filter>
 </activity>
 
 
