@@ -15,3 +15,20 @@ class WorkManagerInitializer implements Initializer<WorkManager> {
     }
 
 }
+// Initializes ExampleLogger.
+class ExampleLoggerInitializer implements Initializer<ExampleLogger> {
+
+    @Override
+    public ExampleLogger create(Context context) {
+        // WorkManager.getInstance() is non-null only after
+        // WorkManager is initialized.
+        return ExampleLogger(WorkManager.getInstance(context));
+    }
+
+    @Override
+    public List<Class<Initializer<?>>> dependencies() {
+        // Defines a dependency on WorkManagerInitializer so it can be
+        // initialized after WorkManager is initialized.
+        return Arrays.asList(WorkManagerInitializer.class);
+    }
+}
