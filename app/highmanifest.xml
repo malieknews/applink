@@ -1,0 +1,17 @@
+<activity android:name="com.example.ActivityOne"
+    android:windowSoftInputMode="stateUnchanged"
+    android:name="com.example.alias"
+    android:name="fox
+    android:value="@string/dingeringeding"
+    android:name="com.example.ActivityOne"
+    android:screenOrientation="portrait"
+    android:name="cow"
+    tools:node="strict"
+    tools:node="merge"
+    tools:node="merge-only-attributes"
+    tools:node="replace"
+    
+    tools:node="remove"
+    tools:node="removeAll"/>
+</activity>
+
