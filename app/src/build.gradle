@@ -2,5 +2,18 @@ android {
     defaultConfig {
         manifestPlaceholders = [hostName:"www.adball.tech"]
     }
-    ...
+   
+}
+android {
+    defaultConfig {
+        applicationId "tech.adball.myapp"
+    }
+    productFlavors {
+        free {
+            applicationIdSuffix ".free"
+        }
+        pro {
+            applicationIdSuffix ".pro"
+        }
+    }
 }
