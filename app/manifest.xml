@@ -60,4 +60,9 @@
     android:allowTaskReparenting="true"
     android:windowSoftInputMode="stateUnchanged">
 
+<intent-filter ... >
+    <action android:name="${applicationId}.TRANSMOGRIFY" />
+    ...
+</intent-filter>
+
 
